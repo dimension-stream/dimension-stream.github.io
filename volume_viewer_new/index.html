@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="UTF-8"><meta name="description" content="Dimension Stream homepage"><meta name="keywords" content="HTML, CSS, JavaScript"><meta name="author" content="Dimension Stream"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/png" href="../logo16x16.png" sizes="16x16"><link rel="icon" type="image/png" href="../logo32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="../logo96x96.png" sizes="96x96"><style>.cetntered-div {
+            /* outline: dashed 1px rgb(196, 119, 119); */
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+            /* margin-top: 20vh; */
+        }
+
+        #logo-canvas {
+            width: 400px;
+            height: 400px;
+        }
+
+        #volume-canvas {
+            width: 100%;
+            height: 100%;
+            /* outline: dashed 2px whitesmoke; */
+            z-index: 0;
+        }
+        #progress {
+            /* margin: auto; */
+            padding: 10px;
+            text-align: center;
+            background-color: #111111;
+            position: absolute;
+            place-self: center;
+            border: 2px solid grey;
+            border-radius: 20px;
+            z-index: 1;
+        }
+        #progress h3,p,progress {
+            margin: 0;
+        }</style><script defer="defer" src="../247.bundle.js"></script><script defer="defer" src="../volume_viewer_new.bundle.js"></script></head><body><div class="cetntered-div"><div style="display: flex; place-content: center;"><canvas id="volume-canvas"></canvas><div id="progress"><h3>Downloading</h3><p id="progress_text"></p><progress id="progress_bar" value="0" max="100"></progress></div></div></div></body></html>
